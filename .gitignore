@@ -1,0 +1,3 @@
+/deploy/taozi-be/mysql/data/
+/backend/taozi-be.*.tar
+/backend/target/
