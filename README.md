@@ -4,6 +4,7 @@
 ./db/create_tables.sql      仅业务相关的表, 只有结构不带数据
 ./script/csv_to_mysql.py    csv导入mysql数据库的脚本, 用法: python3 PATH_CSV TABLE_NAME, 注意csv数据和表字段,数据类型要对应
 
+deploy 部署服务
 
 生成后端服务镜像
 
@@ -12,5 +13,5 @@ cd backend
 使用make生成镜像
 make all active=release ver=0.2.0
 
-清楚生成的镜像
+清除生成的镜像
 make clean active=release ver=0.2.0
