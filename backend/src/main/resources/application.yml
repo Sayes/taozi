@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: taozi-be
+  profiles:
+    active: @profiles.activation@

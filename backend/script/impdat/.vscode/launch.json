@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "/root/workshop/projects_road/chuhe/template_data/data-schema/", "nlasset", "ldxx", "luduan20220428.csv", "./column_match.csv"
+            ]
+        }
+    ]
+}

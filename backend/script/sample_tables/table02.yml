@@ -1,0 +1,58 @@
+version: 100
+scheme:
+    metadata:
+    tables:
+        -
+            name: table03
+            fields:
+                -
+                    name: id
+                    type: int
+                    length: 4
+                    primary_key: true
+                    auto_inc: true
+                    not_null: true
+                    comment: 'this is primary key, auto increment'
+                -
+                    name: start_stake
+                    type: nvarchar
+                    length: 40
+                    not_null: true
+                    default: ''
+                    comment: ''
+                -
+                    name: end_stake
+                    type: varchar
+                    length: 40
+                    not_null: true
+                    default: ''
+                    comment: ''
+            auto_increment: 2
+        -
+            name: table04
+            fields:
+                -
+                  name: id
+                  type: int
+                  length: 4
+                  primary_key: true
+                  auto_inc: true
+                  not_null: true
+                  comment: 'this is primary key, auto increment'
+                -
+                  name: start_stake
+                  type: varchar
+                  length: 40
+                  not_null: true
+                  default: ''
+                  comment: ''
+                -
+                  name: end_stake
+                  type: varchar
+                  length: 40
+                  not_null: true
+                  default: ''
+                  comment: ''
+            auto_increment: 2
+            engine: InnoDB
+            encoding: utf8
