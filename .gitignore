@@ -2,3 +2,4 @@
 /backend/taozi-be.*.tar
 /backend/target/
 /backend/log/
+/frontend/node_modules/
