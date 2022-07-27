@@ -17,7 +17,6 @@ import com.taozi.common.system.util.JwtUtil;
 import com.taozi.common.system.vo.LoginUser;
 import com.taozi.common.util.RedisUtil;
 import com.taozi.common.util.SpringContextUtils;
-import com.taozi.config.mybatis.TenantContext;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 

@@ -4,19 +4,14 @@ import com.alibaba.fastjson.JSONObject;
 import com.taozi.common.system.vo.LoginUser;
 import com.taozi.common.util.RestUtil;
 import com.taozi.config.TaoziBaseConfig;
-import com.taozi.config.shiro.ShiroRealm;
 import net.sf.json.JSONArray;
-import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.Map;
 
 @Configuration
 public class TaoziAppMenu {

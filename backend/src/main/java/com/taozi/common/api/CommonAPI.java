@@ -29,7 +29,8 @@ public interface CommonAPI {
      * @param dbSourceId
      * @return
      */
-    DynamicDataSourceModel getDynamicDbSourceById(String dbSourceId);
+    // SYZ, 20220727, TODO
+    //DynamicDataSourceModel getDynamicDbSourceById(String dbSourceId);
 
     /**
      * 4根据 code 查询数据库中存储的 DynamicDataSourceModel
@@ -37,7 +38,8 @@ public interface CommonAPI {
      * @param dbSourceCode
      * @return
      */
-    DynamicDataSourceModel getDynamicDbSourceByCode(String dbSourceCode);
+    // SYZ, 20220727, TODO
+    //DynamicDataSourceModel getDynamicDbSourceByCode(String dbSourceCode);
 
     /**
      * 5根据用户账号查询用户信息
@@ -69,7 +71,8 @@ public interface CommonAPI {
      * 8查询数据权限
      * @return
      */
-    List<SysPermissionDataRuleModel> queryPermissionDataRule(String component, String requestPath, String username);
+    // SYZ, 20220727, TODO
+    //List<SysPermissionDataRuleModel> queryPermissionDataRule(String component, String requestPath, String username);
 
 
     /**

@@ -25,18 +25,24 @@ public class Demo1Application extends SpringBootServletInitializer {
     }
 
     public static void main(String[] args) throws UnknownHostException {
-        ConfigurableApplicationContext application = SpringApplication.run(Demo1Application.class, args);
-        Environment env = application.getEnvironment();
-        String ip = InetAddress.getLocalHost().getHostAddress();
-        String port = env.getProperty("server.port");
-        String path = oConvertUtils.getString(env.getProperty("server.servlet.context-path"));
+        try {
+            ConfigurableApplicationContext application = SpringApplication.run(Demo1Application.class, args);
+            Environment env = application.getEnvironment();
+            String ip = InetAddress.getLocalHost().getHostAddress();
+            String port = env.getProperty("server.port");
+            String path = oConvertUtils.getString(env.getProperty("server.servlet.context-path"));
 
-        log.info("\n----------------------------------------------------------\n\t" +
-                "Application Demo1 is running! Access URLs:\n\t" +
-                "Local: \t\thttp://localhost:" + port + path + "/\n\t" +
-                "External: \thttp://" + ip + ":" + port + path + "/\n\t" +
-                "Swagger文档: \thttp://" + ip + ":" + port + path + "/doc.html\n" +
-                "----------------------------------------------------------");
+            log.info("\n----------------------------------------------------------\n\t" +
+                    "Application Demo1 is running! Access URLs:\n\t" +
+                    "Local: \t\thttp://localhost:" + port + path + "/\n\t" +
+                    "External: \thttp://" + ip + ":" + port + path + "/\n\t" +
+                    "Swagger文档: \thttp://" + ip + ":" + port + path + "/doc.html\n" +
+                    "----------------------------------------------------------");
+
+        } catch (Exception e) {
+            log.info(e.getMessage());
+
+        }
 
     }
 
