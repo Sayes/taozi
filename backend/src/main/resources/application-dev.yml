@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 9080
   tomcat:
     max-swallow-size: -1
   error:
@@ -7,7 +7,7 @@ server:
     include-stacktrace: ALWAYS
     include-message: ALWAYS
   servlet:
-    context-path: /testroad/company-name/laroad
+    context-path: /api
   compression:
     enabled: true
     min-response-size: 1024

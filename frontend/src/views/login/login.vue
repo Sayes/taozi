@@ -109,7 +109,7 @@ export default defineComponent({
   },
   methods: {
     refreshVerifyCode() {
-      this['$daisyRequest'].get(`/general/user/verify_code`).then((response: any) => {
+      this['$daisyRequest'].get(`/sys/user/verify_code`).then((response: any) => {
         const data = response.data.data;
         if (!data) {
           this['$message'].error('请求异常');

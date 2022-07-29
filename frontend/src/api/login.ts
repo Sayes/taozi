@@ -12,7 +12,7 @@ type ConfigType<T = ResponseData> = Promise<AxiosResponse<T>>
  */
 export const login = (data: LoginFrom): ConfigType<LoginSuccess> => {
   return request({
-    url: 'general/user/login',
+    url: 'v1/sys/user/login',
     method: 'post',
     data
   })
@@ -24,7 +24,7 @@ export const login = (data: LoginFrom): ConfigType<LoginSuccess> => {
  */
 export const info = (): ConfigType<UserInfo> => {
   return request({
-    url: 'general/user/info',
+    url: 'sys/user/info',
     method: 'get',
     headers: {
       RefreshToken: 'ttttttttt'
@@ -37,7 +37,7 @@ export const info = (): ConfigType<UserInfo> => {
  */
 export const menu = (): ConfigType<RouterData> => {
   return request({
-    url: 'general/user/menu',
+    url: 'sys/user/menu',
     method: 'get'
   })
 }
@@ -47,7 +47,7 @@ export const menu = (): ConfigType<RouterData> => {
  */
 export const logout = (): ConfigType => {
   return request({
-    url: 'general/user/logout',
+    url: 'sys/user/logout',
     method: 'post'
   })
 }
@@ -57,7 +57,7 @@ export const logout = (): ConfigType => {
  */
 export const refreshToken = (refreshToken: string): ConfigType => {
   return request({
-    url: 'general/user/refresh_token',
+    url: 'sys/user/refresh_token',
     method: 'get',
     headers: {
       RefreshToken: refreshToken
@@ -70,7 +70,7 @@ export const refreshToken = (refreshToken: string): ConfigType => {
  */
 export const newRefreshToken = (refreshToken: string): ConfigType => {
   return request({
-    url: 'general/user/new_refresh_token',
+    url: 'sys/user/new_refresh_token',
     method: 'get',
     headers: {
       RefreshToken: refreshToken
